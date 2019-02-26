@@ -1,0 +1,12 @@
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\prudhvi.exe.config
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\prudhvi.exe
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\prudhvi.pdb
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prudhvi.resources
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\prudhvi.exe
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\prudhvi.pdb
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manageusers.resources
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.User.resources
