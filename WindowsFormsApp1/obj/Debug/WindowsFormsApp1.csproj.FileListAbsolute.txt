@@ -10,3 +10,15 @@ E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\prudhvi.
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\prudhvi.pdb
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manageusers.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.User.resources
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.exe.config
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.exe
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.pdb
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manageusers.resources
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.User.resources
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prudhvi.resources
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\prudhvi.exe
+C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\prudhvi.pdb
