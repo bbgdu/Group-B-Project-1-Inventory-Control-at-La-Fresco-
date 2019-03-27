@@ -47,18 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="functions\CustomerFunctions.cs" />
     <Compile Include="functions\UserFunctions.cs" />
+    <Compile Include="ManageCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageCustomers.Designer.cs">
+      <DependentUpon>ManageCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manageusers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manageusers.Designer.cs">
       <DependentUpon>Manageusers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="popup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="popup.Designer.cs">
-      <DependentUpon>popup.cs</DependentUpon>
     </Compile>
     <Compile Include="functions\login.cs" />
     <Compile Include="Classes\Users.cs" />
@@ -70,11 +78,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCustomers.resx">
+      <DependentUpon>ManageCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manageusers.resx">
       <DependentUpon>Manageusers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="popup.resx">
-      <DependentUpon>popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prudhvi.resx">
       <DependentUpon>Prudhvi.cs</DependentUpon>

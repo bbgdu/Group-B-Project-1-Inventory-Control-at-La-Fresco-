@@ -14,6 +14,7 @@ namespace WindowsFormsApp1.functions
     class UserFunctions
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+        //private object intVar;
         #region Select 
         public DataTable Select()
         {
@@ -163,5 +164,32 @@ namespace WindowsFormsApp1.functions
             return isSuccess;
         }
         #endregion
+
+        #region Search
+        public DataTable Search(string username)
+        {
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            DataTable dt = new DataTable();
+
+            try
+            {    
+                string query = "select * from admin_login where username = @username";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                cmd.Parameters.AddWithValue("@username",username);
+                conn.Open();
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        #endregion Search
     }
 }
