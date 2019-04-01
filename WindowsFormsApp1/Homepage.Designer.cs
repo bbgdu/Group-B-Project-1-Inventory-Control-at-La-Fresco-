@@ -33,7 +33,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +45,7 @@
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 28);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(800, 422);
+            this.pictureBox2.Size = new System.Drawing.Size(1473, 659);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -60,7 +59,7 @@
             this.adminToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1473, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,24 +77,11 @@
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click_1);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(418, 336);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 87);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "First Iteration Done!\r\nAdded 7 features.\r\nCompleted GUI part that features.\r\nClic" +
-    "k Cutomer and Admin in menu to view functionalities.\r\n\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1473, 687);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Homepage";
@@ -116,6 +102,5 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
     }
 }

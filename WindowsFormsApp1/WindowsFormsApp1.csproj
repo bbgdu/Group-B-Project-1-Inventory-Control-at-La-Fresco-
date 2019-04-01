@@ -47,7 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Bill.cs" />
+    <Compile Include="Classes\bill_item.cs" />
     <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Stock.cs" />
+    <Compile Include="Classes\Tempcart.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="functions\StockFunctions.cs" />
+    <Compile Include="functions\TempcartFunctions.cs" />
+    <Compile Include="GenerateBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateBill.Designer.cs">
+      <DependentUpon>GenerateBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +79,12 @@
     </Compile>
     <Compile Include="ManageCustomers.Designer.cs">
       <DependentUpon>ManageCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageProducts.Designer.cs">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="Manageusers.cs">
       <SubType>Form</SubType>
@@ -78,11 +102,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateBill.resx">
+      <DependentUpon>GenerateBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageCustomers.resx">
       <DependentUpon>ManageCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageProducts.resx">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manageusers.resx">
       <DependentUpon>Manageusers.cs</DependentUpon>

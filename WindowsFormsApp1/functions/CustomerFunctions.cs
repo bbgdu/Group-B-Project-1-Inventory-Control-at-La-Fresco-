@@ -192,5 +192,31 @@ namespace WindowsFormsApp1.functions
             return dt;
         }
         #endregion Search
+
+        #region Search_name
+        public DataTable Search_name(string key)
+        {
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            DataTable dt = new DataTable();
+
+            try
+            {
+                string query = "select * from customer where name LIKE '%" + key + "%' OR rollno LIKE '%" + key + "%'";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                conn.Open();
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        #endregion Search
     }
 }

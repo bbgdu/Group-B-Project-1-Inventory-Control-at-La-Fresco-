@@ -147,5 +147,15 @@ namespace WindowsFormsApp1
                 customerlist.DataSource = dt;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

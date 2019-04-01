@@ -61,6 +61,7 @@
             this.customerlist.RowTemplate.Height = 24;
             this.customerlist.Size = new System.Drawing.Size(1068, 299);
             this.customerlist.TabIndex = 38;
+            this.customerlist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customerlist_CellContentClick);
             this.customerlist.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.customerlist_RowHeaderMouseClick);
             // 
             // searchbox
@@ -80,6 +81,7 @@
             this.button3.Size = new System.Drawing.Size(24, 22);
             this.button3.TabIndex = 36;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
