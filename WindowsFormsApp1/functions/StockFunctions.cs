@@ -53,6 +53,7 @@ namespace WindowsFormsApp1.functions
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@name", c.fname);
+                
                 cmd.Parameters.AddWithValue("@companyname", c.company);
                 cmd.Parameters.AddWithValue("@package", c.amount);
                 cmd.Parameters.AddWithValue("@quantity_available", c.quantity);
@@ -94,10 +95,11 @@ namespace WindowsFormsApp1.functions
             SqlConnection conn = new SqlConnection(myconnstrng);
             try
             {
-                string sql = "UPDATE Stock SET name=@name,companyname=@companyname,package=@package,quantity_available=@quantity,cost_price= @cost_price,selling_price= @selling_price,barcode= @barcode, expiry_date= @expiry_date , mfg_date= @mfg_date where id = @id";
+                string sql = "UPDATE Stock SET name=@name,companyname=@companyname,package=@package,quantity_available=@quantity_available,cost_price= @cost_price,selling_price= @selling_price,barcode= @barcode, expiry_date= @expiry_date , mfg_date= @mfg_date where id = @id";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@name", c.fname);
+                cmd.Parameters.AddWithValue("@id", c.id);
                 cmd.Parameters.AddWithValue("@companyname", c.company);
                 cmd.Parameters.AddWithValue("@package", c.amount);
                 cmd.Parameters.AddWithValue("@quantity_available", c.quantity);
@@ -195,5 +197,42 @@ namespace WindowsFormsApp1.functions
             return dt;
         }
         #endregion Search
+
+        #region deduce data in Database
+        public bool deduce(int id,int quantity)
+        {
+            bool isSuccess = false;
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                string sql = "UPDATE Stock SET quantity_available=quantity_available-@quantity where id = @id";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                cmd.Parameters.AddWithValue("@quantity", quantity);
+                cmd.Parameters.AddWithValue("@id", id);
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    //Query Successfull
+                    isSuccess = true;
+                }
+                else
+                {
+                    //Query Failed
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isSuccess;
+        }
+        #endregion
     }
 }

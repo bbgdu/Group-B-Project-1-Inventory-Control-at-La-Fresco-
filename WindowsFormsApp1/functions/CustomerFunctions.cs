@@ -218,5 +218,43 @@ namespace WindowsFormsApp1.functions
             return dt;
         }
         #endregion Search
+
+        #region Deduct balance in Database
+        public bool Deduct(int i,float balance)
+        {
+            bool isSuccess = false;
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                string sql = "UPDATE customer SET balance = @balance where id = @id";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", i);
+                cmd.Parameters.AddWithValue("@balance", balance);
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    //Query Successfull
+                    isSuccess = true;
+                }
+                else
+                {
+                    //Query Failed
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isSuccess;
+        }
+        #endregion
+
+
     }
 }

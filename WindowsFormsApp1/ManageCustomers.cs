@@ -37,7 +37,15 @@ namespace WindowsFormsApp1
 
                 c.name = namebox.Text.Trim();
                 c.email = emailbox.Text.Trim();
+            if (contactbox.Text != "")
+            {
                 c.contact = Int64.Parse(contactbox.Text.Trim());
+            }
+            else
+            {
+                c.contact = 0;
+            }
+
                 c.balance = float.Parse(balancebox.Text.Trim());
                 c.type = typebox.Text.Trim();
                 c.thumb_impression = thumbbox.Text.Trim();
@@ -68,7 +76,14 @@ namespace WindowsFormsApp1
             c.id = idbox.Text.Trim();
             c.name = namebox.Text.Trim();
             c.email = emailbox.Text.Trim();
-            c.contact = Int64.Parse(contactbox.Text.Trim());
+              if (contactbox.Text != "")
+            {
+                c.contact = Int64.Parse(contactbox.Text.Trim());
+            }
+            else
+            {
+                c.contact = 0;
+            }
             c.balance = float.Parse(balancebox.Text.Trim());
             c.type = typebox.Text.Trim();
             c.thumb_impression = thumbbox.Text.Trim();

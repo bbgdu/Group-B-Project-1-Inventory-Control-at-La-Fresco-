@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GenerateBill));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cnamebox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.balancelabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -40,7 +42,7 @@
             this.cidbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.customerlist = new System.Windows.Forms.DataGridView();
-            this.cnamebox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.regbtn = new System.Windows.Forms.RadioButton();
@@ -71,9 +73,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.payablelabel = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerlist)).BeginInit();
@@ -84,6 +86,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cnamebox);
+            this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.balancelabel);
             this.panel1.Controls.Add(this.label7);
@@ -94,7 +98,7 @@
             this.panel1.Controls.Add(this.cidbox);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.customerlist);
-            this.panel1.Controls.Add(this.cnamebox);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.regbtn);
@@ -105,6 +109,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(456, 772);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cnamebox
+            // 
+            this.cnamebox.Location = new System.Drawing.Point(117, 146);
+            this.cnamebox.Name = "cnamebox";
+            this.cnamebox.Size = new System.Drawing.Size(210, 22);
+            this.cnamebox.TabIndex = 21;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(34, 444);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(49, 17);
+            this.label22.TabIndex = 19;
+            this.label22.Text = "Name:";
             // 
             // label9
             // 
@@ -159,7 +180,7 @@
             // 
             // contactbox
             // 
-            this.contactbox.Location = new System.Drawing.Point(117, 502);
+            this.contactbox.Location = new System.Drawing.Point(117, 518);
             this.contactbox.Name = "contactbox";
             this.contactbox.ReadOnly = true;
             this.contactbox.Size = new System.Drawing.Size(210, 22);
@@ -168,7 +189,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 507);
+            this.label5.Location = new System.Drawing.Point(34, 518);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 17);
             this.label5.TabIndex = 11;
@@ -176,7 +197,7 @@
             // 
             // cidbox
             // 
-            this.cidbox.Location = new System.Drawing.Point(117, 461);
+            this.cidbox.Location = new System.Drawing.Point(117, 477);
             this.cidbox.Name = "cidbox";
             this.cidbox.ReadOnly = true;
             this.cidbox.Size = new System.Drawing.Size(210, 22);
@@ -185,7 +206,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 466);
+            this.label3.Location = new System.Drawing.Point(49, 477);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 17);
             this.label3.TabIndex = 9;
@@ -194,29 +215,30 @@
             // customerlist
             // 
             this.customerlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customerlist.Location = new System.Drawing.Point(37, 202);
+            this.customerlist.Location = new System.Drawing.Point(37, 184);
             this.customerlist.Name = "customerlist";
             this.customerlist.RowTemplate.Height = 24;
             this.customerlist.Size = new System.Drawing.Size(391, 232);
             this.customerlist.TabIndex = 8;
+            this.customerlist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customerlist_CellContentClick);
             this.customerlist.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.customerlist_RowHeaderMouseClick);
             // 
-            // cnamebox
+            // textBox1
             // 
-            this.cnamebox.Location = new System.Drawing.Point(117, 156);
-            this.cnamebox.Name = "cnamebox";
-            this.cnamebox.Size = new System.Drawing.Size(210, 22);
-            this.cnamebox.TabIndex = 7;
-            this.cnamebox.TextChanged += new System.EventHandler(this.cnamebox_TextChanged);
+            this.textBox1.Location = new System.Drawing.Point(117, 444);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(210, 22);
+            this.textBox1.TabIndex = 20;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 156);
+            this.label4.Location = new System.Drawing.Point(34, 149);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
+            this.label4.Size = new System.Drawing.Size(61, 17);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Name:";
+            this.label4.Text = "Search :";
             // 
             // label2
             // 
@@ -356,6 +378,7 @@
             this.cartlist.RowTemplate.Height = 24;
             this.cartlist.Size = new System.Drawing.Size(449, 300);
             this.cartlist.TabIndex = 27;
+            this.cartlist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cartlist_CellContentClick);
             this.cartlist.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.cartlist_RowHeaderMouseClick);
             // 
             // button1
@@ -496,15 +519,7 @@
             this.payablelabel.Size = new System.Drawing.Size(145, 54);
             this.payablelabel.TabIndex = 40;
             this.payablelabel.Text = "00.00";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(1192, 625);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(149, 33);
-            this.button5.TabIndex = 42;
-            this.button5.Text = "Save";
-            this.button5.UseVisualStyleBackColor = true;
+            this.payablelabel.Click += new System.EventHandler(this.payablelabel_Click);
             // 
             // button6
             // 
@@ -518,12 +533,23 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(1192, 671);
+            this.button7.Location = new System.Drawing.Point(1201, 646);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(149, 33);
             this.button7.TabIndex = 44;
             this.button7.Text = "Confirm";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(1119, 139);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(90, 17);
+            this.label21.TabIndex = 46;
+            this.label21.Text = "Non-Member";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // GenerateBill
             // 
@@ -531,9 +557,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1426, 772);
             this.ControlBox = false;
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.payablelabel);
             this.Controls.Add(this.label19);
@@ -578,7 +604,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView customerlist;
-        private System.Windows.Forms.TextBox cnamebox;
+        private System.Windows.Forms.TextBox textbox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton regbtn;
@@ -590,9 +616,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox contactbox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox cidbox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker datetimebox;
         private System.Windows.Forms.Label label12;
@@ -618,8 +642,13 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label payablelabel;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        public System.Windows.Forms.TextBox contactbox;
+        public System.Windows.Forms.TextBox cidbox;
+        public System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cnamebox;
     }
 }

@@ -90,6 +90,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            c.id = Int64.Parse(idbox.Text.Trim());
             c.fname = namebox.Text.Trim();
             c.company = cnamebox.Text.Trim();
             c.amount = packagebox.Text.Trim();
@@ -141,7 +142,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            c.id = idbox.Text.Trim();
+            c.id = Int32.Parse(idbox.Text.Trim());
             bool ok = cf.Delete(c);
 
             if (ok == true)

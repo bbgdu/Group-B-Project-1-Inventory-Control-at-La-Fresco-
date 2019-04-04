@@ -8,7 +8,7 @@ namespace WindowsFormsApp1.Classes
 {
     class Bill
     {
-        public string bill_id { get; set; }
+        public int bill_id { get; set; }
         public int customer_id { get; set; }
         public float amount { get; set; }
         public float final_discount { get; set; }

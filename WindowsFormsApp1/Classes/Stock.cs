@@ -8,7 +8,7 @@ namespace WindowsFormsApp1.Classes
 {
     class Stock
     {
-        public string id { get; set; }
+        public Int64 id { get; set; }
         public string fname { get; set; }
         public string company { get; set; }
         public string amount { get; set; }
