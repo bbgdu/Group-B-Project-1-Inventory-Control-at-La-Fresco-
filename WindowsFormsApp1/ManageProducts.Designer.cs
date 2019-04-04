@@ -35,7 +35,6 @@
             this.costbox = new System.Windows.Forms.TextBox();
             this.productlist = new System.Windows.Forms.DataGridView();
             this.searchbox = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,12 +53,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productlist)).BeginInit();
             this.SuspendLayout();
             // 
             // quantitybox
             // 
-            this.quantitybox.Location = new System.Drawing.Point(119, 329);
+            this.quantitybox.Location = new System.Drawing.Point(117, 329);
             this.quantitybox.Name = "quantitybox";
             this.quantitybox.Size = new System.Drawing.Size(186, 22);
             this.quantitybox.TabIndex = 66;
@@ -112,17 +112,6 @@
             this.searchbox.Name = "searchbox";
             this.searchbox.Size = new System.Drawing.Size(132, 22);
             this.searchbox.TabIndex = 60;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.icons8_search_48;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(531, 171);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(24, 22);
-            this.button3.TabIndex = 59;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -288,6 +277,17 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker2.TabIndex = 74;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.icons8_search_48;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Location = new System.Drawing.Point(531, 171);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(24, 22);
+            this.button3.TabIndex = 59;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ManageProducts
             // 

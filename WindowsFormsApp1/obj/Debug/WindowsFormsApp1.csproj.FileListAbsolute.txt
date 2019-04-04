@@ -11,10 +11,11 @@ E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\prudhvi.
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manageusers.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Homepage.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManageCustomers.resources
-E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManageProducts.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GenerateBill.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\itextsharp.dll
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\itextsharp.xml
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Resources.Confirmation.resources
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Profit.resources
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BillTransaction.resources

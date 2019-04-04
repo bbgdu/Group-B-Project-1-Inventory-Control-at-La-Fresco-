@@ -50,17 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillTransaction.Designer.cs">
+      <DependentUpon>BillTransaction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Bill.cs" />
     <Compile Include="Classes\bill_item.cs" />
     <Compile Include="Classes\Customer.cs" />
     <Compile Include="Classes\Stock.cs" />
     <Compile Include="Classes\Tempcart.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="functions\BillFunctions.cs" />
     <Compile Include="functions\StockFunctions.cs" />
     <Compile Include="functions\TempcartFunctions.cs" />
@@ -98,6 +98,12 @@
     </Compile>
     <Compile Include="functions\login.cs" />
     <Compile Include="Classes\Users.cs" />
+    <Compile Include="Profit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profit.Designer.cs">
+      <DependentUpon>Profit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prudhvi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,8 +118,8 @@
     <Compile Include="Resources\Confirmation.Designer.cs">
       <DependentUpon>Confirmation.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="BillTransaction.resx">
+      <DependentUpon>BillTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerateBill.resx">
       <DependentUpon>GenerateBill.cs</DependentUpon>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manageusers.resx">
       <DependentUpon>Manageusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profit.resx">
+      <DependentUpon>Profit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prudhvi.resx">
       <DependentUpon>Prudhvi.cs</DependentUpon>
