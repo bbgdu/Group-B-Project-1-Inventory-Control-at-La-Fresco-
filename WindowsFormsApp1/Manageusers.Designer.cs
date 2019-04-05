@@ -170,7 +170,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(355, 331);
+            this.button2.Location = new System.Drawing.Point(294, 331);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 45);
             this.button2.TabIndex = 16;
@@ -182,7 +182,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(206, 331);
+            this.button4.Location = new System.Drawing.Point(171, 331);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(98, 45);
             this.button4.TabIndex = 17;
@@ -194,27 +194,28 @@
             // 
             this.button3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.icons8_search_48;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(1137, 43);
+            this.button3.Location = new System.Drawing.Point(934, 40);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 22);
+            this.button3.Size = new System.Drawing.Size(46, 22);
             this.button3.TabIndex = 18;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(602, 43);
+            this.textBox7.Location = new System.Drawing.Point(516, 40);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(529, 22);
+            this.textBox7.Size = new System.Drawing.Size(403, 22);
             this.textBox7.TabIndex = 19;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // userlist
             // 
             this.userlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.userlist.Location = new System.Drawing.Point(602, 77);
+            this.userlist.Location = new System.Drawing.Point(516, 77);
             this.userlist.Name = "userlist";
             this.userlist.RowTemplate.Height = 24;
-            this.userlist.Size = new System.Drawing.Size(615, 357);
+            this.userlist.Size = new System.Drawing.Size(464, 299);
             this.userlist.TabIndex = 20;
             this.userlist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.userlist.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.userlist_RowHeaderMouseClick);
@@ -223,7 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 471);
+            this.ClientSize = new System.Drawing.Size(1028, 414);
             this.Controls.Add(this.userlist);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.button3);

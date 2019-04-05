@@ -28,8 +28,9 @@ namespace WindowsFormsApp1
 
         private void Manageusers_Load(object sender, EventArgs e)
         {
-            DataTable dt = uf.Select();
-            userlist.DataSource = dt;
+                DataTable dt = uf.Select();
+                userlist.DataSource = dt;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -87,7 +88,7 @@ namespace WindowsFormsApp1
             u.name = textBox6.Text.Trim();
             u.email = textBox5.Text.Trim();
             u.password = textBox3.Text.Trim();
-            u.contact = Int64.Parse(textBox4.Text.Trim());
+            u.contact = Int32.Parse(textBox4.Text.Trim());
             if (u.username != "")
             {
                 bool ok = uf.Update(u);
@@ -184,6 +185,22 @@ namespace WindowsFormsApp1
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+            String s = textBox7.Text.Trim();
+            if (s != "")
+            {
+                DataTable dt = uf.Search(s);
+                userlist.DataSource = dt;
+            }
+            else
+            {
+                DataTable dt = uf.Select();
+                userlist.DataSource = dt;
+            }
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
         }

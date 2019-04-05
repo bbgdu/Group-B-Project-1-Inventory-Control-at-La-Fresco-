@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -47,21 +50,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillTransaction.Designer.cs">
+      <DependentUpon>BillTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Bill.cs" />
+    <Compile Include="Classes\bill_item.cs" />
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Stock.cs" />
+    <Compile Include="Classes\Tempcart.cs" />
+    <Compile Include="functions\BillFunctions.cs" />
+    <Compile Include="functions\StockFunctions.cs" />
+    <Compile Include="functions\TempcartFunctions.cs" />
+    <Compile Include="GenerateBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateBill.Designer.cs">
+      <DependentUpon>GenerateBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="functions\CustomerFunctions.cs" />
     <Compile Include="functions\UserFunctions.cs" />
+    <Compile Include="ManageCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageCustomers.Designer.cs">
+      <DependentUpon>ManageCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageProducts.Designer.cs">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manageusers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manageusers.Designer.cs">
       <DependentUpon>Manageusers.cs</DependentUpon>
     </Compile>
-    <Compile Include="popup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="popup.Designer.cs">
-      <DependentUpon>popup.cs</DependentUpon>
-    </Compile>
     <Compile Include="functions\login.cs" />
     <Compile Include="Classes\Users.cs" />
+    <Compile Include="Profit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profit.Designer.cs">
+      <DependentUpon>Profit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prudhvi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +112,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Confirmation.Designer.cs">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BillTransaction.resx">
+      <DependentUpon>BillTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateBill.resx">
+      <DependentUpon>GenerateBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCustomers.resx">
+      <DependentUpon>ManageCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageProducts.resx">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manageusers.resx">
       <DependentUpon>Manageusers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="popup.resx">
-      <DependentUpon>popup.cs</DependentUpon>
+    <EmbeddedResource Include="Profit.resx">
+      <DependentUpon>Profit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prudhvi.resx">
       <DependentUpon>Prudhvi.cs</DependentUpon>
@@ -89,6 +152,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources\Confirmation.resx">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,7 +167,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-login-icon-29.png" />

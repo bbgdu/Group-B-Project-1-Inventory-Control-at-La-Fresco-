@@ -66,7 +66,7 @@ namespace WindowsFormsApp1
             {
                 //MessageBox.Show("Login Success");
                 this.Hide();
-                var m = new Manageusers();
+                var m = new Homepage();
                 m.ShowDialog();
                 this.Close();
             }

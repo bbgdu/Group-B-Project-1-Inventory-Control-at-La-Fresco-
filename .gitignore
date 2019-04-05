@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages/iTextSharp.5.5.13
+/WindowsFormsApp1/bin/Debug
+/WindowsFormsApp1/Classes
+/WindowsFormsApp1/obj/Debug
+/WindowsFormsApp1/Resources
+/WindowsFormsApp1/functions
