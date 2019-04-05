@@ -189,6 +189,7 @@
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.label3);
             this.Name = "BillTransaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillTransaction";
             this.Load += new System.EventHandler(this.BillTransaction_Load);
             this.panel1.ResumeLayout(false);

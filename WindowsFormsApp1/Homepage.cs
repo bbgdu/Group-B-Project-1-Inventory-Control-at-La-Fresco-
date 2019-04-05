@@ -19,7 +19,8 @@ namespace WindowsFormsApp1
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-
+            var m = new GenerateBill();
+            m.ShowDialog();
         }
         private void customerToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
@@ -40,6 +41,42 @@ namespace WindowsFormsApp1
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void newBillToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var m = new GenerateBill();
+            m.ShowDialog();
+        }
+
+        private void stockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var m = new ManageProducts();
+            m.ShowDialog();
+        }
+
+        private void transactionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var m = new BillTransaction();
+            m.ShowDialog();
+        }
+
+        private void stockOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var m = new stockout();
+            m.ShowDialog();
+        }
+
+        private void profitCalculationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var m = new Profit();
+            m.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var m = new GenerateBill();
+            m.ShowDialog();
         }
     }
 }

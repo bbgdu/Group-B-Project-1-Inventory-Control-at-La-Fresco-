@@ -281,6 +281,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ManageCustomers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageCustomers";
             this.Load += new System.EventHandler(this.ManageCustomers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customerlist)).EndInit();
