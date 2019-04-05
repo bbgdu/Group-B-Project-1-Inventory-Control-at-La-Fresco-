@@ -1,2 +1,3 @@
 # Group-B-Project-1-Inventory-Control-at-La-Fresco-
-First iteration completed.
+Second Iteration of Code Completed.
+
