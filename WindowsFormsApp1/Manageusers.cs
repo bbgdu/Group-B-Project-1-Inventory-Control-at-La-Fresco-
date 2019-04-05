@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
                 u.name = textBox6.Text.Trim();
                 u.email = textBox5.Text.Trim();
                 u.password = textBox3.Text.Trim();
-                u.contact = Int32.Parse(textBox4.Text.Trim());
+                u.contact = Int64.Parse(textBox4.Text.Trim());
                 if (u.username != "")
                 {
                     bool ok = uf.Insert(u);
@@ -87,7 +87,7 @@ namespace WindowsFormsApp1
             u.name = textBox6.Text.Trim();
             u.email = textBox5.Text.Trim();
             u.password = textBox3.Text.Trim();
-            u.contact = Int32.Parse(textBox4.Text.Trim());
+            u.contact = Int64.Parse(textBox4.Text.Trim());
             if (u.username != "")
             {
                 bool ok = uf.Update(u);

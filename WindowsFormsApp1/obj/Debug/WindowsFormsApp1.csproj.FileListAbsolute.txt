@@ -22,3 +22,15 @@ C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fres
 C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\prudhvi.exe
 C:\Users\Deepu\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\prudhvi.pdb
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.exe.config
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.exe
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.pdb
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manageusers.resources
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.User.resources
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prudhvi.resources
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\prudhvi.exe
+C:\Users\LENOVO\Source\Repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\prudhvi.pdb
