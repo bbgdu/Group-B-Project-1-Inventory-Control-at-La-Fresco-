@@ -19,3 +19,4 @@ E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Resources.Confirmation.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Profit.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BillTransaction.resources
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.stockout.resources
