@@ -79,5 +79,10 @@ namespace WindowsFormsApp1
             var m = new GenerateBill();
             m.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

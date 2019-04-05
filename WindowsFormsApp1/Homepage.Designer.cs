@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.newBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profitCalculationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -76,6 +76,13 @@
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
+            // newBillToolStripMenuItem
+            // 
+            this.newBillToolStripMenuItem.Name = "newBillToolStripMenuItem";
+            this.newBillToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.newBillToolStripMenuItem.Text = "New_Bill";
+            this.newBillToolStripMenuItem.Click += new System.EventHandler(this.newBillToolStripMenuItem_Click);
+            // 
             // customerToolStripMenuItem
             // 
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
@@ -111,13 +118,6 @@
             this.profitCalculationToolStripMenuItem.Text = "Profit-Calculation";
             this.profitCalculationToolStripMenuItem.Click += new System.EventHandler(this.profitCalculationToolStripMenuItem_Click);
             // 
-            // newBillToolStripMenuItem
-            // 
-            this.newBillToolStripMenuItem.Name = "newBillToolStripMenuItem";
-            this.newBillToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
-            this.newBillToolStripMenuItem.Text = "New_Bill";
-            this.newBillToolStripMenuItem.Click += new System.EventHandler(this.newBillToolStripMenuItem_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -128,16 +128,17 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(643, 538);
+            this.label1.Location = new System.Drawing.Point(763, 516);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(725, 69);
+            this.label1.Size = new System.Drawing.Size(501, 71);
             this.label1.TabIndex = 5;
             this.label1.Text = "LA FRESCO IIT INDORE";
             // 
