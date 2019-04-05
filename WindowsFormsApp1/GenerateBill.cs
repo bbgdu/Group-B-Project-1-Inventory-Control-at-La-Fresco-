@@ -44,6 +44,7 @@ namespace WindowsFormsApp1
         {
             if (unregbtn.Checked)
             {
+                customerlist.DataSource = null;
                 textBox1.Text = "";
                 cidbox.Text = "";
                 contactbox.Text = "";
@@ -173,43 +174,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tc.item_id = item_id;
-            tc.price = price;
-            quantity = Int32.Parse(quantitybox.Text.Trim());
-            tc.quantity = quantity;
-
-            bool ok = tcf.Insert(tc);
-            if (ok)
-            {
-                DataTable dt4 = tcf.Select();
-                cartlist.DataSource = dt4;
-            }
-            else
-            {
-                MessageBox.Show("Failed!");
-            }
-            SqlConnection conn = new SqlConnection(myconnstrng);
-            try
-            {
-               
-                string query = "select sum(price*quantity) from tempcart";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                conn.Open();
-                DataTable dt5 = new DataTable();
-                adapter.Fill(dt5);
-                // total_amount = dt5.Rows[0].Field<float>(0);
-                total_amount = float.Parse(dt5.Rows[0][0].ToString());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
-            amountbox.Text = total_amount.ToString();
+           
         }
 
         private void stocklist_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -311,42 +276,216 @@ namespace WindowsFormsApp1
         {
             if (MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (float.Parse(balancelabel.Text) <= float.Parse(payablelabel.Text))
+                if (regbtn.Checked)
                 {
-                    MessageBox.Show("Insufficient Balance");
-                }
-                else
-                {
-                    float var = float.Parse(balancelabel.Text) - float.Parse(payablelabel.Text);
-                    cf.Deduct(Int32.Parse(cidbox.Text.Trim()), var);
-                    balancelabel.Text = var.ToString();
-                    foreach (DataGridViewRow row in cartlist.Rows)
+                    if (float.Parse(balancelabel.Text) <= float.Parse(payablelabel.Text))
                     {
-                        if (row.Cells[3].Value != null) sf.deduce(Int32.Parse(row.Cells[3].Value.ToString()), Int32.Parse(row.Cells[2].Value.ToString()));
+                        MessageBox.Show("Insufficient Balance");
                     }
-                    foreach (DataGridViewRow row in cartlist.Rows)
+                    else
                     {
-                        if (row.Cells[3].Value != null)
+                        float var = float.Parse(balancelabel.Text) - float.Parse(payablelabel.Text);
+                        cf.Deduct(Int32.Parse(cidbox.Text.Trim()), var);
+                        balancelabel.Text = var.ToString();
+                        foreach (DataGridViewRow row in cartlist.Rows)
                         {
-                            bill_item bi = new bill_item();
-                            bi.bill_id = Int32.Parse(bidbox.Text.Trim());
-                            bi.product_id = Int32.Parse(row.Cells[3].Value.ToString());
-                            bi.quantity = Int32.Parse(row.Cells[2].Value.ToString());
-                            bi.total_price = float.Parse(row.Cells[1].Value.ToString());
-                            bf.Insert(bi);
+                            if (row.Cells[3].Value != null) sf.deduce(Int32.Parse(row.Cells[3].Value.ToString()), Int32.Parse(row.Cells[2].Value.ToString()));
+                        }
+                        foreach (DataGridViewRow row in cartlist.Rows)
+                        {
+                            if (row.Cells[3].Value != null)
+                            {
+                                bill_item bi = new bill_item();
+                                bi.bill_id = Int32.Parse(bidbox.Text.Trim());
+                                bi.product_id = Int32.Parse(row.Cells[3].Value.ToString());
+                                bi.quantity = Int32.Parse(row.Cells[2].Value.ToString());
+                                bi.total_price = float.Parse(row.Cells[1].Value.ToString());
+                                bf.Insert(bi);
+                            }
+                        }
+                        Bill f = new Bill();
+                        f.bill_id = Int32.Parse(bidbox.Text.Trim());
+                        f.customer_id = Int32.Parse(cidbox.Text.Trim());
+                        f.amount = float.Parse(amountbox.Text.Trim());
+                        f.final_discount = float.Parse(discountbox.Text.Trim());
+                        f.grand_total = float.Parse(payablelabel.Text);
+                        f.date_time = DateTime.Now;
+                        bf.bill_insert(f);
+
+
+                        cartlist.DataSource = tcf.Select();
+                        try
+                        {
+                            var pdfDoc = new Document(PageSize.LETTER, 40f, 40f, 60f, 60f);
+                            string path = $"C:\\Users\\Deepu\\Desktop\\Test.pdf";
+                            PdfWriter.GetInstance(pdfDoc, new FileStream(path, FileMode.OpenOrCreate));
+                            pdfDoc.Open();
+                            var spacer = new Paragraph("")
+                            {
+                                SpacingBefore = 10f,
+                                SpacingAfter = 10f,
+                            };
+                            iTextSharp.text.Font times = FontFactory.GetFont("TIMES_ROMAN", 25, iTextSharp.text.Font.BOLD);
+                            iTextSharp.text.Font normal = FontFactory.GetFont("TIMES_ROMAN", 12);
+                            iTextSharp.text.Font normalbold = FontFactory.GetFont("TIMES_ROMAN", 12, iTextSharp.text.Font.BOLD);
+                            iTextSharp.text.Font normalitalic = FontFactory.GetFont("FREESTYLE_SCRIPT", 10, iTextSharp.text.Font.ITALIC);
+                            var spacer1 = new Paragraph("LA FRESCO - The IITI Facilitation Center", times)
+                            {
+
+                                SpacingBefore = 10f,
+                                SpacingAfter = 10f,
+                            };
+                            pdfDoc.Add(spacer);
+                            pdfDoc.Add(spacer);
+                            spacer1.Alignment = Element.ALIGN_CENTER;
+                            pdfDoc.Add(spacer1);
+
+                            Chunk glue = new Chunk(new VerticalPositionMark());
+                            Paragraph P = new Paragraph("BILL ID: " + bidbox.Text.Trim(), normal);
+                            P.Add(new Chunk(glue));
+                            P.Add("Date: " + DateTime.Now.ToString());
+                            pdfDoc.Add(P);
+
+
+
+                            //IMAGE
+
+                            //var imagepath = @"C:\Users\Deepu\Desktop\thumb.png";
+                            //using (FileStream fs = new FileStream(imagepath, FileMode.Open))
+                            //{
+                            //   var png = iTextSharp.text.Image.GetInstance(System.Drawing.Image.FromStream(fs), ImageFormat.Png);
+                            //  png.ScalePercent(5f);
+                            // png.SetAbsolutePosition(pdfDoc.Left, pdfDoc.Top);
+                            //pdfDoc.Add(png);
+                            //}
+
+
+
+                            //pdfDoc.Add(spacer);
+
+
+                            var spacer2 = new Paragraph("NAME: " + textBox1.Text.Trim(), normal)
+                            {
+
+                                SpacingBefore = 10f,
+                                SpacingAfter = 10f,
+                            };
+
+                            pdfDoc.Add(spacer2);
+                            pdfDoc.Add(spacer);
+
+                            var columnCount = cartlist.ColumnCount;
+
+                            var columnWidths = new[] { 0.75f, .75f, .75f, 0.75f };
+
+                            var table = new PdfPTable(columnWidths)
+                            {
+                                HorizontalAlignment = Left,
+                                WidthPercentage = 100,
+                                DefaultCell = { MinimumHeight = 22f }
+                            };
+
+                            var cell = new PdfPCell(new Phrase("Product Details "))
+                            {
+                                Colspan = columnCount,
+                                HorizontalAlignment = 1,  //0=Left, 1=Centre, 2=Right
+                                MinimumHeight = 30f
+                            };
+                            cell.BorderWidthBottom = 1f;
+                            cell.BorderWidthLeft = 0f;
+                            cell.BorderWidthRight = 0f;
+                            cell.BorderWidthTop = 1f;
+
+                            table.AddCell(cell);
+
+                            //Adding Header row
+                            foreach (DataGridViewColumn column in cartlist.Columns)
+                            {
+                                PdfPCell ycell = new PdfPCell(new Phrase(column.HeaderText));
+                                ycell.FixedHeight = 25f;
+                                ycell.BorderWidthBottom = 1f;
+                                ycell.BorderWidthLeft = 0f;
+                                ycell.BorderWidthRight = 0f;
+                                ycell.BorderWidthTop = 0f;
+
+                                // ycell.BackgroundColor = new iTextSharp.text.Color(240, 240, 240);
+                                table.AddCell(ycell);
+                            }
+
+                            /*    cartlist.Columns
+                                    .OfType<DataGridViewColumn>()
+                                    .ToList()
+                                    .ForEach(c => 
+                                    c.BorderWidthBottom = 1f,
+                                c.BorderWidthLeft= 0f,
+                                c.BorderWidthRight = 0f,
+                                c.BorderWidthTop = 0f,
+
+                                    table.AddCell(c.Name)); */
+
+
+                            /*    cartlist.Rows
+                                   .OfType<DataGridViewRow>()
+                                   .ToList()
+                                   .ForEach(r =>
+                                   {
+                                       var cells = r.Cells.OfType<DataGridViewCell>().ToList();
+                                       cells.ForEach(c => table.AddCell(c.Value.ToString()));
+                                   }); */
+
+                            table.DefaultCell.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                            //Adding DataRow
+                            foreach (DataGridViewRow row in cartlist.Rows)
+                            {
+                                foreach (DataGridViewCell cellx in row.Cells)
+                                {
+                                    if (cellx.Value != null)
+                                        table.AddCell(cellx.Value.ToString());
+                                }
+                            }
+
+                            pdfDoc.Add(table);
+
+                            var spacer3 = new Paragraph("TOTAL AMOUNT PAYABLE: ₹" + payablelabel.Text.Trim(), normalbold)
+                            {
+
+                                SpacingBefore = 10f,
+                                SpacingAfter = 5f,
+
+                            };
+                            int savings;
+                            savings = Int32.Parse(amountbox.Text.Trim()) - Int32.Parse(payablelabel.Text.Trim());
+                            var spacer4 = new Paragraph("YOUR SAVINGS OVER MRP: ₹" + savings.ToString(), normalbold)
+                            {
+
+                                SpacingBefore = 5f,
+                                SpacingAfter = 20f,
+
+                            };
+                            var spacer5 = new Paragraph("THANK YOU FOR VISITING LAFRESCO! HAVE A NICE DAY!", normalitalic)
+                            {
+
+                                SpacingBefore = 10f,
+                                SpacingAfter = 10f,
+
+                            };
+                            spacer5.Alignment = Element.ALIGN_CENTER;
+
+                            pdfDoc.Add(spacer3);
+                            pdfDoc.Add(spacer4);
+                            pdfDoc.Add(spacer5);
+
+
+                            pdfDoc.Close();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
                         }
                     }
-                    Bill f = new Bill();
-                    f.bill_id = Int32.Parse(bidbox.Text.Trim());
-                    f.customer_id = Int32.Parse(cidbox.Text.Trim());
-                    f.amount = float.Parse(amountbox.Text.Trim());
-                    f.final_discount = float.Parse(discountbox.Text.Trim());
-                    f.grand_total = float.Parse(payablelabel.Text);
-                    f.date_time = DateTime.Now;
-                    bf.bill_insert(f);
-
-
-                    cartlist.DataSource = tcf.Select();
+                }
+                else if (unregbtn.Checked)
+                {
                     try
                     {
                         var pdfDoc = new Document(PageSize.LETTER, 40f, 40f, 60f, 60f);
@@ -466,7 +605,7 @@ namespace WindowsFormsApp1
                                    cells.ForEach(c => table.AddCell(c.Value.ToString()));
                                }); */
 
-                        table.DefaultCell.Border = iTextSharp.text.Rectangle.NO_BORDER;                       
+                        table.DefaultCell.Border = iTextSharp.text.Rectangle.NO_BORDER;
                         //Adding DataRow
                         foreach (DataGridViewRow row in cartlist.Rows)
                         {
@@ -663,6 +802,47 @@ namespace WindowsFormsApp1
         private void cartlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void addcartbutton_Click(object sender, EventArgs e)
+        {
+            tc.item_id = item_id;
+            tc.price = price;
+            quantity = Int32.Parse(quantitybox.Text.Trim());
+            tc.quantity = quantity;
+
+            bool ok = tcf.Insert(tc);
+            if (ok)
+            {
+                DataTable dt4 = tcf.Select();
+                cartlist.DataSource = dt4;
+            }
+            else
+            {
+                MessageBox.Show("Failed!");
+            }
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+
+                string query = "select sum(price*quantity) from tempcart";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                conn.Open();
+                DataTable dt5 = new DataTable();
+                adapter.Fill(dt5);
+                // total_amount = dt5.Rows[0].Field<float>(0);
+                total_amount = float.Parse(dt5.Rows[0][0].ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            amountbox.Text = total_amount.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)

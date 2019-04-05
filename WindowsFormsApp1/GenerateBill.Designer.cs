@@ -58,7 +58,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.stocklist = new System.Windows.Forms.DataGridView();
             this.cartlist = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.quantitybox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -76,6 +75,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
+            this.addcartbutton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerlist)).BeginInit();
@@ -381,17 +381,6 @@
             this.cartlist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cartlist_CellContentClick);
             this.cartlist.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.cartlist_RowHeaderMouseClick);
             // 
-            // button1
-            // 
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.Location = new System.Drawing.Point(751, 520);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 32);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Add to cart >>";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // quantitybox
             // 
             this.quantitybox.Location = new System.Drawing.Point(565, 523);
@@ -552,11 +541,22 @@
             this.label21.Text = "Non-Member";
             this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
+            // addcartbutton
+            // 
+            this.addcartbutton.Location = new System.Drawing.Point(757, 518);
+            this.addcartbutton.Name = "addcartbutton";
+            this.addcartbutton.Size = new System.Drawing.Size(122, 32);
+            this.addcartbutton.TabIndex = 47;
+            this.addcartbutton.Text = "Add to cart >>";
+            this.addcartbutton.UseVisualStyleBackColor = true;
+            this.addcartbutton.Click += new System.EventHandler(this.addcartbutton_Click);
+            // 
             // GenerateBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1426, 772);
+            this.Controls.Add(this.addcartbutton);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -574,7 +574,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.quantitybox);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.cartlist);
             this.Controls.Add(this.stocklist);
             this.Controls.Add(this.label14);
@@ -627,7 +626,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView stocklist;
         private System.Windows.Forms.DataGridView cartlist;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox quantitybox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button3;
@@ -650,5 +648,6 @@
         public System.Windows.Forms.TextBox cidbox;
         public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox cnamebox;
+        private System.Windows.Forms.Button addcartbutton;
     }
 }

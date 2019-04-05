@@ -72,11 +72,11 @@ namespace WindowsFormsApp1
             var m = new Profit();
             m.ShowDialog();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void newtransaction_Click(object sender, EventArgs e)
         {
             var m = new GenerateBill();
             m.ShowDialog();
         }
+
     }
 }
