@@ -117,6 +117,7 @@
             this.cnamebox.Name = "cnamebox";
             this.cnamebox.Size = new System.Drawing.Size(210, 22);
             this.cnamebox.TabIndex = 21;
+            this.cnamebox.TextChanged += new System.EventHandler(this.cnamebox_TextChanged_1);
             // 
             // label22
             // 

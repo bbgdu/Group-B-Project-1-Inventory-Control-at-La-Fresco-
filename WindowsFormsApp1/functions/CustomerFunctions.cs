@@ -23,7 +23,7 @@ namespace WindowsFormsApp1.functions
             DataTable dt = new DataTable();
             try
             {
-                string query = "select *from customer";
+                string query = "select id as ID, name as Name, email as Email, contact as Contact, rollno as RollNo, balance as Balance, type as Type from customer";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 conn.Open();

@@ -317,7 +317,7 @@ namespace WindowsFormsApp1
                         try
                         {
                             var pdfDoc = new Document(PageSize.LETTER, 40f, 40f, 60f, 60f);
-                            string path = $"C:\\Users\\Deepu\\Desktop\\Test.pdf";
+                            string path = $"C:\\Users\\Vinayak\\Desktop\\Test.pdf";
                             PdfWriter.GetInstance(pdfDoc, new FileStream(path, FileMode.OpenOrCreate));
                             pdfDoc.Open();
                             var spacer = new Paragraph("")
@@ -489,7 +489,7 @@ namespace WindowsFormsApp1
                     try
                     {
                         var pdfDoc = new Document(PageSize.LETTER, 40f, 40f, 60f, 60f);
-                        string path = $"C:\\Users\\Deepu\\Desktop\\Test.pdf";
+                        string path = $"C:\\Users\\Vinayak\\Desktop\\Test.pdf";
                         PdfWriter.GetInstance(pdfDoc, new FileStream(path, FileMode.OpenOrCreate));
                         pdfDoc.Open();
                         var spacer = new Paragraph("")
@@ -843,6 +843,20 @@ namespace WindowsFormsApp1
                 conn.Close();
             }
             amountbox.Text = total_amount.ToString();
+        }
+
+        private void cnamebox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (cnamebox.Text.Trim() != "")
+            {
+                DataTable dt = cf.Search_name(cnamebox.Text.Trim());
+                customerlist.DataSource = dt;
+            }
+            else
+            {
+                DataTable dt = cf.Select();
+                customerlist.DataSource = dt;
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
