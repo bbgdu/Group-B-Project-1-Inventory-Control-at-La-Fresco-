@@ -118,6 +118,12 @@
     <Compile Include="Resources\Confirmation.Designer.cs">
       <DependentUpon>Confirmation.cs</DependentUpon>
     </Compile>
+    <Compile Include="stockout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockout.Designer.cs">
+      <DependentUpon>stockout.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BillTransaction.resx">
       <DependentUpon>BillTransaction.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +160,9 @@
     </Compile>
     <EmbeddedResource Include="Resources\Confirmation.resx">
       <DependentUpon>Confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockout.resx">
+      <DependentUpon>stockout.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

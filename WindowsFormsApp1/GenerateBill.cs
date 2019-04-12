@@ -174,43 +174,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tc.item_id = item_id;
-            tc.price = price;
-            quantity = Int32.Parse(quantitybox.Text.Trim());
-            tc.quantity = quantity;
-
-            bool ok = tcf.Insert(tc);
-            if (ok)
-            {
-                DataTable dt4 = tcf.Select();
-                cartlist.DataSource = dt4;
-            }
-            else
-            {
-                MessageBox.Show("Failed!");
-            }
-            SqlConnection conn = new SqlConnection(myconnstrng);
-            try
-            {
-               
-                string query = "select sum(price*quantity) from tempcart";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                conn.Open();
-                DataTable dt5 = new DataTable();
-                adapter.Fill(dt5);
-                // total_amount = dt5.Rows[0].Field<float>(0);
-                total_amount = float.Parse(dt5.Rows[0][0].ToString());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
-            amountbox.Text = total_amount.ToString();
+           
         }
 
         private void stocklist_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -343,7 +307,9 @@ namespace WindowsFormsApp1
                         f.bill_id = Int32.Parse(bidbox.Text.Trim());
                         f.customer_id = Int32.Parse(cidbox.Text.Trim());
                         f.amount = float.Parse(amountbox.Text.Trim());
-                        f.final_discount = float.Parse(discountbox.Text.Trim());
+                        if (discountbox.Text == "") { f.final_discount = 0; }
+                        else { f.final_discount = float.Parse(discountbox.Text.Trim()); }
+                        
                         f.grand_total = float.Parse(payablelabel.Text);
                         f.date_time = DateTime.Now;
                         bf.bill_insert(f);
@@ -520,7 +486,7 @@ namespace WindowsFormsApp1
                         }
                     }
                 }
-                else if(unregbtn.Checked)
+                else if (unregbtn.Checked)
                 {
                     try
                     {
@@ -838,6 +804,62 @@ namespace WindowsFormsApp1
         private void cartlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void addcartbutton_Click(object sender, EventArgs e)
+        {
+            tc.item_id = item_id;
+            tc.price = price;
+            quantity = Int32.Parse(quantitybox.Text.Trim());
+            tc.quantity = quantity;
+
+            bool ok = tcf.Insert(tc);
+            if (ok)
+            {
+                DataTable dt4 = tcf.Select();
+                cartlist.DataSource = dt4;
+            }
+            else
+            {
+                MessageBox.Show("Failed!");
+            }
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+
+                string query = "select sum(price*quantity) from tempcart";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                conn.Open();
+                DataTable dt5 = new DataTable();
+                adapter.Fill(dt5);
+                // total_amount = dt5.Rows[0].Field<float>(0);
+                total_amount = float.Parse(dt5.Rows[0][0].ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            amountbox.Text = total_amount.ToString();
+            pnamebox.Text = "";
+            pnamebox.TabIndexChanged += Pnamebox_TabIndexChanged;
+        }
+
+        private void Pnamebox_TabIndexChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void cnamebox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (regbtn.Checked)
+            {
+                customerlist.DataSource = cf.Search_name(cnamebox.Text.Trim());
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)

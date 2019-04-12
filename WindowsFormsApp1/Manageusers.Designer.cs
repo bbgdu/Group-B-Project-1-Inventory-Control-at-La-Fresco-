@@ -244,6 +244,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Manageusers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Users";
             this.Load += new System.EventHandler(this.Manageusers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userlist)).EndInit();

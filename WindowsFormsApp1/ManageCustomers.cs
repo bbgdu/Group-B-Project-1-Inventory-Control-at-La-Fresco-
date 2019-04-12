@@ -150,10 +150,9 @@ namespace WindowsFormsApp1
 
         private void searchbox_TextChanged(object sender, EventArgs e)
         {
-            String s = searchbox.Text.Trim();
-            if (s != "")
+            if (searchbox.Text.Trim() != "")
             {
-                DataTable dt = cf.Search(s);
+                DataTable dt = cf.Search_name(searchbox.Text.Trim());
                 customerlist.DataSource = dt;
             }
             else

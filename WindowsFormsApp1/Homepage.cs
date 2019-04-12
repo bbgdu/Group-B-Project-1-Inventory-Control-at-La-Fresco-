@@ -24,18 +24,18 @@ namespace WindowsFormsApp1
         }
         private void customerToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-
+            
             var m = new ManageCustomers();
             m.ShowDialog();
-
+            
         }
 
         private void adminToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-
+            
             var m = new Manageusers();
             m.ShowDialog();
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -43,14 +43,13 @@ namespace WindowsFormsApp1
 
         }
 
-      
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void newBillToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var m = new GenerateBill();
+            m.ShowDialog();
         }
 
-        private void stockToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void stockToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var m = new ManageProducts();
             m.ShowDialog();
@@ -62,27 +61,22 @@ namespace WindowsFormsApp1
             m.ShowDialog();
         }
 
+        private void stockOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var m = new stockout();
+            m.ShowDialog();
+        }
+
         private void profitCalculationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var m = new Profit();
             m.ShowDialog();
         }
-
-        private void newBillToolStripMenuItem_Click(object sender, EventArgs e)
+        private void newtransaction_Click(object sender, EventArgs e)
         {
             var m = new GenerateBill();
             m.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var m = new GenerateBill();
-            m.ShowDialog();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

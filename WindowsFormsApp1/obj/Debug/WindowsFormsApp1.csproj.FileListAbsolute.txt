@@ -19,45 +19,26 @@ E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Resources.Confirmation.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Profit.resources
 E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BillTransaction.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\prudhvi.exe.config
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\prudhvi.exe
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\prudhvi.pdb
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\itextsharp.dll
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\itextsharp.xml
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BillTransaction.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GenerateBill.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Homepage.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManageCustomers.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManageProducts.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manageusers.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Profit.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prudhvi.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Resources.Confirmation.resources
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\prudhvi.exe
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\prudhvi.pdb
-E:\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.exe.config
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.exe
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\prudhvi.pdb
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\itextsharp.dll
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\bin\Debug\itextsharp.xml
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BillTransaction.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GenerateBill.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Homepage.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManageCustomers.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManageProducts.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manageusers.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Profit.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prudhvi.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Resources.Confirmation.resources
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\prudhvi.exe
-C:\Users\LENOVO\source\repos\bbgdu\Group-B-Project-1-Inventory-Control-at-La-Fresco-\WindowsFormsApp1\obj\Debug\prudhvi.pdb
+E:\Users\Deepu\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.stockout.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\prudhvi.exe.config
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\prudhvi.exe
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\prudhvi.pdb
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\itextsharp.dll
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\bin\Debug\itextsharp.xml
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BillTransaction.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GenerateBill.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Homepage.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManageCustomers.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManageProducts.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manageusers.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Profit.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prudhvi.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Resources.Confirmation.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.stockout.resources
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\prudhvi.exe
+D:\Soft Engineering Proj\Group-B-Project-1-Inventory-Control-at-La-Fresco--master (1)\Group-B-Project-1-Inventory-Control-at-La-Fresco--master\WindowsFormsApp1\obj\Debug\prudhvi.pdb

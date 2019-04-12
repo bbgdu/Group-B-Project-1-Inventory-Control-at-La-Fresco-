@@ -321,6 +321,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ManageProducts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageProducts";
             this.Load += new System.EventHandler(this.ManageProducts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productlist)).EndInit();

@@ -76,7 +76,6 @@
             this.billlist.RowTemplate.Height = 24;
             this.billlist.Size = new System.Drawing.Size(773, 518);
             this.billlist.TabIndex = 1;
-            this.billlist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.billlist_CellContentClick);
             // 
             // profitlist
             // 
@@ -171,6 +170,7 @@
             this.button2.TabIndex = 43;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // BillTransaction
             // 
@@ -189,6 +189,7 @@
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.label3);
             this.Name = "BillTransaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillTransaction";
             this.Load += new System.EventHandler(this.BillTransaction_Load);
             this.panel1.ResumeLayout(false);
